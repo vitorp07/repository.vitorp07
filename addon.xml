@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon
-<addon
-    id="service.3denabler.samsungtv"
+<addons>
+<addon id="service.3denabler.samsungtv"
     name="3D Enabler"
     version="1.0"
     provider-name="vitorp07">
