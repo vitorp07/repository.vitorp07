@@ -19,4 +19,16 @@
     <source>https://github.com/vitorp07/service.3denabler.samsungtv</source>
   </extension>
 </addon>
+<addon id="repository.vitorp07" name="vitorp07's Repository" version="1.0" provider-name="vitorp07">
+	<extension point="xbmc.addon.repository" name="vitorp07's Repository">
+		<info compressed="false">https://raw.githubusercontent.com/vitorp07/repository.vitorp07/master/addon.xml</info>
+		<checksum>https://raw.githubusercontent.com/vitorp07/repository.vitorp07/master/addon.xml.md5</checksum>
+		<datadir zip="true">https://github.com/vitorp07/repository.vitorp07/tree/master/zip/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>vitorp07's Repository</summary>
+		<description>my repo</description>
+		<platform>all</platform>
+	</extension>
+</addon>
 </addons>
