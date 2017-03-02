@@ -12,24 +12,21 @@
 		<platform>all</platform>
 	</extension>
 </addon>
-<addon id="service.3denabler.samsungtv"
-    name="3D Enabler"
-    version="1.0"
-    provider-name="vitorp07">
-  <requires>
-    <import addon="xbmc.python"              version="2.14.0"/>
-    <import addon="script.module.simplejson" version="2.0.10"/>
-  </requires>
-  <extension point="xbmc.service"       library="service.py" start="login"/>
-  <extension point="xbmc.python.script" library="script.py"/>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <language/>
-    <summary lang="en">Switch Samsung TV into 3D mode when playing 3D movie</summary>
-    <description lang="en">When a 3D movie is started - the Samsung 3DTV that is connected by LAN will switch to respective 3D mode automatically</description>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <source>https://github.com/vitorp07/service.3denabler.samsungtv</source>
-  </extension>
+<addon id="service.3denabler.samsungtv" name="3D Enabler" version="1.0" provider-name="vitorp07">
+        <requires>
+                <import addon="xbmc.python"              version="2.14.0"/>
+                <import addon="script.module.simplejson" version="2.0.10"/>
+        </requires>
+        <extension point="xbmc.service"       library="service.py" start="login"/>
+        <extension point="xbmc.python.script" library="script.py"/>
+        <extension point="xbmc.addon.metadata">
+                <platform>all</platform>
+                <language/>
+                <summary lang="en">Switch Samsung TV into 3D mode when playing 3D movie</summary>
+                <description lang="en">When a 3D movie is started - the Samsung 3DTV that is connected by LAN will switch to respective 3D mode automatically</description>
+                <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+                <source>https://github.com/vitorp07/service.3denabler.samsungtv</source>
+        </extension>
 </addon>
 <addon id="skin.estuary" version="2.0.0~beta" name="Estuary" provider-name="vitorp07, phil65, Ichabod Fletchman">
 	<requires>
