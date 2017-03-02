@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 <addon id="repository.vitorp07" name="vitorp07's Repository" version="1.0" provider-name="vitorp07">
 	<extension point="xbmc.addon.repository" name="vitorp07's Repository">
