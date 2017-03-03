@@ -126,4 +126,23 @@
 		<email>OpenELEQ@gmail.com</email>
 	</extension>
 </addon>
+<addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="3.0.2" provider-name="brianhornsby">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">TuneIn Radio</summary>
+		<description lang="en">TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description>
+		<language></language>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=119315</forum>
+		<website>http://brianhornsby.com/kodi_addons/tuneinradio</website>
+		<source>https://github.com/brianhornsby/plugin.audio.tuneinradio</source>
+	</extension>
+</addon>	
 </addons>
