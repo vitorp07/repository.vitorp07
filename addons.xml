@@ -145,7 +145,7 @@
 		<source>https://github.com/brianhornsby/plugin.audio.tuneinradio</source>
 	</extension>
 </addon>
-<addon id="visualization.projectm" version="2.0.0.0" name="projectM" provider-name="Team XBMC">
+<addon id="visualization.projectm" version="2.0.0.0" name="projectM" provider-name="vitorp07, Team XBMC">
   <extension point="xbmc.player.musicviz" library_linux="visualization.projectm.so">
     <settings>
       <userdirs>
@@ -173,7 +173,7 @@ All projectM requires is a video card with 3D acceleration and your favorite mus
     <platform>linux</platform>
   </extension>
 </addon>
-<addon id="screensaver.rsxs.solarwinds" version="2.0.0.0" name="Solarwinds" provider-name="mogumbo, Team XBMC">
+<addon id="screensaver.rsxs.solarwinds" version="2.0.0.0" name="Solarwinds" provider-name="vitorp07, mogumbo, Team XBMC">
   <requires>
     <c-pluff version="0.1"/>
   </requires>
@@ -187,6 +187,21 @@ All projectM requires is a video card with 3D acceleration and your favorite mus
     <description lang="en_AU">This is a very mesmerising particle effects screensaver. You'll find that you can achieve an amazing number of different patterns.</description>
     <description lang="en_NZ">This is a very mesmerising particle effects screensaver. You'll find that you can achieve an amazing number of different patterns.</description>
     <description lang="en_US">This is a very mesmerizing particle effects screensaver. You'll find that you can achieve an amazing number of different patterns.</description>
+    <platform>linux</platform>
+  </extension>
+</addon>
+<addon id="visualization.fishbmc" version="5.0.0.0" name="FishBMC" provider-name="vitorp07, 26elf">
+  <extension point="xbmc.player.musicviz" library_linux="visualization.fishbmc.so"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Visualisation showing Waves and Blur Effects</summary>
+    <summary lang="en_AU">Visualisation showing Waves and Blur Effects</summary>
+    <summary lang="en_NZ">Visualisation showing Waves and Blur Effects</summary>
+    <description lang="en">fishBMC is based on fische, a standalone sound visualisation tool. The basic principle is: draw the waveform and smear the drawing along predefined vectors. However fische also incorporates advanced beat detection, which really guarantees a great visual experience.</description>
+    <description lang="en_AU">fishBMC is based on fische, a standalone sound visualisation tool. The basic principle is: draw the waveform and smear the drawing along predefined vectors. However fische also incorporates advanced beat detection, which really guarantees a great visual experience.</description>
+    <description lang="en_NZ">fishBMC is based on fische, a standalone sound visualisation tool. The basic principle is: draw the waveform and smear the drawing along predefined vectors. However fische also incorporates advanced beat detection, which really guarantees a great visual experience.</description>
+    <disclaimer lang="en">If this breaks anything, the pieces remain yours.</disclaimer>
+    <disclaimer lang="en_AU">If this breaks anything, the pieces remain yours.</disclaimer>
+    <disclaimer lang="en_NZ">If this breaks anything, the pieces remain yours.</disclaimer>
     <platform>linux</platform>
   </extension>
 </addon>	
