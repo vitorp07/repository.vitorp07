@@ -64,41 +64,40 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="plugin.video.metalliq" name="[COLOR ff0084ff]M[/COLOR]etalli[COLOR ff0084ff]Q[/COLOR]" version="2.1.0k" provider-name="[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], Midraal, forked from Meta-video">
+<addon id="plugin.video.metallic" name="Metallic" version="1.0" provider-name="vitorp07">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
-		<import addon="repository.q" version="0.0.0.1"/>
 		<import addon="script.module.requests" version="2.9.1"/>
 		<import addon="script.module.futures" version="2.2.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>video audio</provides>
+		<provides>executable</provides>
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="[login|startup]">
 	</extension>
 	<extension point="kodi.context.item">
 		<menu id="kodi.core.main">
 			<menu>
-				<label>[COLOR ff0084ff]M[/COLOR]etalli[COLOR ff0084ff]Q[/COLOR]</label>
+				<label>Metallic</label>
 				<item library="context_toggle.py">
 					<label>Preferred toggle</label>
-					<visible>!System.HasAddon(context.metalliq) + !Skin.HasSetting(Toggling)</visible>
+					<visible>!System.HasAddon(context.metallic) + !Skin.HasSetting(Toggling)</visible>
 				</item>
 				<item library="context_movie.py">
-					<label>$ADDON[plugin.video.metalliq 30602]</label>
-					<visible>StringCompare(ListItem.dbtype,movie) + SubString(ListItem.Path, plugin.video.metalliq)</visible>
+					<label>$ADDON[plugin.video.metallic 30602]</label>
+					<visible>StringCompare(ListItem.dbtype,movie) + SubString(ListItem.Path, plugin.video.metallic)</visible>
 				</item>
 				<item library="context_tvshow.py">
-					<label>$ADDON[plugin.video.metalliq 30602]</label>
-					<visible>StringCompare(ListItem.dbtype,tvshow) + SubString(ListItem.Path, plugin.video.metalliq)</visible>
+					<label>$ADDON[plugin.video.metallic 30602]</label>
+					<visible>StringCompare(ListItem.dbtype,tvshow) + SubString(ListItem.Path, plugin.video.metallic)</visible>
 				</item>
 				<item library="context_live.py">
-					<label>$ADDON[plugin.video.metalliq 30602]</label>
-					<visible>[SubString(ListItem.FileNameAndPath, plugin.video.metalliq\\Live) | SubString(ListItem.FileNameAndPath, plugin.video.metalliq\\Live)]</visible>
+					<label>$ADDON[plugin.video.metallic 30602]</label>
+					<visible>[SubString(ListItem.FileNameAndPath, plugin.video.metallic\\Live) | SubString(ListItem.FileNameAndPath, plugin.video.metallic\\Live)]</visible>
 				</item>
 				<item library="context_playable.py">
-					<label>$ADDON[plugin.video.metalliq 30622]</label>
-					<visible>!System.HasAddon(context.metalliq) + !Skin.HasSetting(Contexting)</visible>
+					<label>$ADDON[plugin.video.metallic 30622]</label>
+					<visible>!System.HasAddon(context.metallic) + !Skin.HasSetting(Contexting)</visible>
 				</item>
 			</menu>
 		</menu>
@@ -108,8 +107,6 @@
 		<language></language>
 		<summary lang="en">TMDb, TVDb, Trakt, AudioDb and LastFM browser</summary>
 		<description lang="en">Browse The MovieDb, The TVDb, Trakt, The AudioDb and LastFM and pass info along to library or an addon to try and play it. Needs player-files and the appropriate addon to actually play.</description>
-		<summary lang="nl">Blader door TMDb, TVDb, Trakt, AudioDb en LastFM</summary>
-		<description lang="nl">Blader door The MovieDb, The TVDb, Trakt, The AudioDb en LastFM en geef info door aan de bibliotheek of een addon om te proberen het af te spelen. Vereist player-bestanden en de bijbehorende addon om daadwerkelijk af te kunnen spelen.</description>
 		<supportedcontent>
 			<content>movies</content>
 			<content>tvshows</content>
@@ -118,12 +115,6 @@
 			<content>music</content>
 			<content>livetv</content>
 		</supportedcontent>
-		<genre>movies,tv,music,livetv</genre>
-		<!--<video_guide>yt-id</video_guide>
-		<video_preview>yt-id</video_preview>-->
-		<forum>http://www.noobsandnerds.com/support/showthread.php?tid=17118</forum>
-		<source>https://github.com/OpenELEQ/repository.q/tree/master/zips/plugin.video.metalliq</source>
-		<email>OpenELEQ@gmail.com</email>
 	</extension>
 </addon>
 <addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="3.0.2" provider-name="vitorp07, brianhornsby">
