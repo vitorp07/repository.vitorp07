@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 <addon id="repository.vitorp07" name="vitorp07's Repository" version="1.0" provider-name="vitorp07">
 	<extension point="xbmc.addon.repository" name="vitorp07's Repository">
@@ -11,6 +12,7 @@
 		<platform>all</platform>
 	</extension>
 </addon>
+
 <addon id="service.3denabler.samsungtv" name="3D Enabler" version="1.0" provider-name="vitorp07">
         <requires>
                 <import addon="xbmc.python"              version="2.14.0"/>
@@ -27,6 +29,7 @@
                 <source>https://github.com/vitorp07/service.3denabler.samsungtv</source>
         </extension>
 </addon>
+
 <addon id="skin.estuary" version="2.9.9" name="Estuary" provider-name="vitorp07, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
@@ -63,6 +66,7 @@
 		</assets>
 	</extension>
 </addon>
+
 <addon id="plugin.video.metallic" name="Metallic" version="1.1" provider-name="vitorp07">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -116,6 +120,7 @@
 		</supportedcontent>
 	</extension>
 </addon>
+
 <addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="3.0.2" provider-name="vitorp07, brianhornsby">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -135,6 +140,7 @@
 		<source>https://github.com/brianhornsby/plugin.audio.tuneinradio</source>
 	</extension>
 </addon>
+
 <addon id="visualization.projectm" version="2.0.0.0" name="projectM" provider-name="vitorp07, Team XBMC">
   <extension point="xbmc.player.musicviz" library_linux="visualization.projectm.so">
     <settings>
@@ -163,6 +169,7 @@ All projectM requires is a video card with 3D acceleration and your favorite mus
     <platform>linux</platform>
   </extension>
 </addon>
+
 <addon id="screensaver.rsxs.solarwinds" version="2.0.0.0" name="Solarwinds" provider-name="vitorp07, mogumbo, Team XBMC">
   <requires>
     <c-pluff version="0.1"/>
@@ -180,6 +187,7 @@ All projectM requires is a video card with 3D acceleration and your favorite mus
     <platform>linux</platform>
   </extension>
 </addon>
+
 <addon id="visualization.fishbmc" version="5.0.0.0" name="FishBMC" provider-name="vitorp07, 26elf">
   <extension point="xbmc.player.musicviz" library_linux="visualization.fishbmc.so"/>
   <extension point="xbmc.addon.metadata">
