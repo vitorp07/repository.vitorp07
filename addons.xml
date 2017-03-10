@@ -64,7 +64,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="plugin.video.metallic" name="Metallic" version="1.0" provider-name="vitorp07">
+<addon id="plugin.video.metallic" name="Metallic" version="1.1" provider-name="vitorp07">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.requests" version="2.9.1"/>
