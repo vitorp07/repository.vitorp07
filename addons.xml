@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.vitorp07" name="vitorp07's Repository" version="1.0" provider-name="vitorp07">
+<addon id="repository.vitorp07" name="vitorp07's Repository" version="1.1" provider-name="vitorp07">
 	<extension point="xbmc.addon.repository" name="vitorp07's Repository">
 		<info compressed="false">https://raw.githubusercontent.com/vitorp07/repository.vitorp07/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/vitorp07/repository.vitorp07/master/addons.xml.md5</checksum>
@@ -67,7 +67,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.metallic" name="Metallic" version="1.1" provider-name="vitorp07">
+<addon id="plugin.video.metallic" name="Metallic" version="1.2" provider-name="vitorp07">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.requests" version="2.9.1"/>
