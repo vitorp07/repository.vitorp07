@@ -202,5 +202,39 @@ All projectM requires is a video card with 3D acceleration and your favorite mus
     <disclaimer lang="en_NZ">If this breaks anything, the pieces remain yours.</disclaimer>
     <platform>linux</platform>
   </extension>
+</addon>
+
+<addon id="visualization.shadertoy" version="2.0.0.0" name="Shadertoy" provider-name="vitorp07, Team-Kodi">
+  <extension point="xbmc.player.musicviz" library_linux="visualization.shadertoy.so"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Visualisations from Shadertoy</summary>
+    <description lang="en">Visualisations from Shadertoy</description>
+    <platform>linux</platform>
+  </extension>
+</addon>
+
+<addon id="visualization.spectrum" version="2.0.0.0" name="Spectrum" provider-name="vitorp07, Team XBMC">
+  <extension point="xbmc.player.musicviz" library_linux="visualization.spectrum.so"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Visualisation showing a rotating 3D Spectrum Analyzer</summary>
+    <description lang="en">Spectrum is a Visualisation showing a rotating 3D Spectrum Analyzer rendered in  that moves to the beat of the music creating a wave effect across the spectrum grid.
+It also has settings to adjust the spectrum bar height, Its speed, and how the bars are rendered (solid, points, wire frame) and is a nice light weight, low cpu useage visualisation that looks great</description>
+    <platform>linux</platform>
+  </extension>
+</addon>
+
+<addon id="visualization.waveform" version="2.0.0.0" name="Waveform" provider-name="vitorp07, MrC">
+  <extension point="xbmc.player.musicviz" library_linux="visualization.waveform.so"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Visualisation showing 2 Waveform Graphs on the screen</summary>
+    <summary lang="en_AU">Visualisation showing 2 Waveform Graphs on the screen</summary>
+    <summary lang="en_NZ">Visualisation showing 2 Waveform Graphs on the screen</summary>
+    <summary lang="en_US">Visualization showing 2 Waveform Graphs on the screen</summary>
+    <description lang="en">Waveform is a simple Visualisation showing 2 Waveform Graphs on the screen, One each for Left and Right channels that move to the beat of the music</description>
+    <description lang="en_AU">Waveform is a simple Visualisation showing 2 Waveform Graphs on the screen, one each for Left and Right channels that move to the beat of the music</description>
+    <description lang="en_NZ">Waveform is a simple Visualisation showing 2 Waveform Graphs on the screen, One each for Left and Right channels that move to the beat of the music</description>
+    <description lang="en_US">Waveform is a simple Visualization showing 2 Waveform Graphs on the screen, One each for Left and Right channels that move to the beat of the music</description>
+    <platform>linux</platform>
+  </extension>
 </addon>	
 </addons>
