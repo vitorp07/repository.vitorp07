@@ -13,7 +13,7 @@
 	</extension>
 </addon>
 
-<addon id="service.3denabler.samsungtv" name="3D Enabler" version="1.0" provider-name="vitorp07">
+<addon id="service.3denabler.samsungtv" name="3D Enabler" version="1.0" provider-name="vitorp07, Pavel Kuzub">
         <requires>
                 <import addon="xbmc.python"              version="2.14.0"/>
                 <import addon="script.module.simplejson" version="2.0.10"/>
@@ -22,11 +22,9 @@
         <extension point="xbmc.python.script" library="script.py"/>
         <extension point="xbmc.addon.metadata">
                 <platform>all</platform>
-                <language/>
-                <summary lang="en">Switch Samsung TV into 3D mode when playing 3D movie</summary>
-                <description lang="en">When a 3D movie is started - the Samsung 3DTV that is connected by LAN will switch to respective 3D mode automatically</description>
+                <summary lang="en">Switch compatible Samsung TV into 3D mode when playing 3D movie</summary>
+                <description lang="en">When a 3D movie is started - the compatible Samsung 3DTV that is connected to the same network will switch to respective 3D mode automatically</description>
                 <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-                <source>https://github.com/vitorp07/service.3denabler.samsungtv</source>
         </extension>
 </addon>
 
@@ -67,7 +65,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.metallic" name="Metallic" version="1.2" provider-name="vitorp07">
+<addon id="plugin.video.metallic" name="Metallic" version="1.2" provider-name="vitorp07, OpenELEQ, Midraal">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.requests" version="2.9.1"/>
@@ -107,7 +105,6 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<language></language>
 		<summary lang="en">TMDb, TVDb, Trakt, AudioDb and LastFM browser</summary>
 		<description lang="en">Browse The MovieDb, The TVDb, Trakt, The AudioDb and LastFM and pass info along to library or an addon to try and play it. Needs player-files and the appropriate addon to actually play.</description>
 		<supportedcontent>
@@ -119,6 +116,31 @@
 			<content>livetv</content>
 		</supportedcontent>
 	</extension>
+</addon>
+
+<addon id="script.extendedinfo" name="Extended Info Mod" version="6.0.0" provider-name="vitorp07, OpenELEQ, phil65">
+  <requires>
+    <import addon="xbmc.python"                     version="2.19.0"/>
+    <import addon="plugin.video.metallic"           version="1.0"/>
+    <import addon="plugin.video.youtube"            version="5.3.10"/>
+    <import addon="script.module.pil"               version="1.1.7"/>
+    <import addon="script.module.requests"          version="1.1.0"/>
+    <import addon="script.module.simplejson"        version="2.0.10"/>
+    <import addon="script.module.urlresolver"       version="1.0.0"/>
+    <import addon="script.module.youtube.dl"        version="14.519.1"/>
+  </requires>
+  <extension point="xbmc.python.script"             library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.library"            library="default.py" />
+  <extension point="xbmc.python.pluginsource"       library="plugin.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Extended Info Mod</summary>
+    <description lang="en">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions. Uses Metallic for library functions.</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="3.0.2" provider-name="vitorp07, brianhornsby">
