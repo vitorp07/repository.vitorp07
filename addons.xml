@@ -65,9 +65,9 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.metallic" name="Metallic" version="1.2" provider-name="vitorp07, OpenELEQ, Midraal">
+<addon id="plugin.video.metallic" name="Metallic" version="1.3" provider-name="vitorp07, OpenELEQ, Midraal">
 	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.9.1"/>
 		<import addon="script.module.futures" version="2.2.0"/>
 	</requires>
@@ -118,9 +118,9 @@
 	</extension>
 </addon>
 
-<addon id="script.extendedinfo" name="Extended Info Mod" version="6.0.0" provider-name="vitorp07, OpenELEQ, phil65">
+<addon id="script.extendedinfo" name="ExtendedInfo Mod" version="6.0.1" provider-name="vitorp07, OpenELEQ, phil65">
   <requires>
-    <import addon="xbmc.python"                     version="2.19.0"/>
+    <import addon="xbmc.python"                     version="2.25.0"/>
     <import addon="plugin.video.metallic"           version="1.0"/>
     <import addon="plugin.video.youtube"            version="5.3.10"/>
     <import addon="script.module.pil"               version="1.1.7"/>
@@ -140,6 +140,26 @@
     <summary lang="en">Extended Info Mod</summary>
     <description lang="en">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions. Uses Metallic for library functions.</description>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="context.extendedinfo.dialog" name="ExtendedInfo - Open dialog" version="1.0.4" provider-name="vitorp07, phil65">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+  </requires>
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+      <item library="addon.py">
+        <label>32000</label>
+        <visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,actor) | String.IsEqual(ListItem.dbtype,director)</visible>
+      </item>
+    </menu>
+  </extension>
+  <extension point="kodi.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Open ExtendedInfo dialog from context menu in library</summary>
+    <description lang="en">Open ExtendedInfo dialog from context menu in library. Needs ExtendedInfo installed and activated. Available for movies, tv shows and seasons currently.</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
   </extension>
 </addon>
 
