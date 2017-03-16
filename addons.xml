@@ -118,7 +118,7 @@
 	</extension>
 </addon>
 
-<addon id="script.extendedinfo" name="ExtendedInfo Mod" version="6.0.1" provider-name="vitorp07, OpenELEQ, phil65">
+<addon id="script.extendedinfo" name="ExtendedInfo Mod" version="6.0.2" provider-name="vitorp07, OpenELEQ, phil65">
   <requires>
     <import addon="xbmc.python"                     version="2.25.0"/>
     <import addon="plugin.video.metallic"           version="1.0"/>
