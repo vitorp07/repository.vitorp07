@@ -65,7 +65,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.metallic" name="Metallic" version="1.4" provider-name="vitorp07, OpenELEQ, Midraal, MetaTeam">
+<addon id="plugin.video.metallic" name="Metallic" version="1.5" provider-name="vitorp07, OpenELEQ, MetaTeam">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.requests" version="2.9.1"/>
@@ -76,40 +76,32 @@
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="[login|startup]">
 	</extension>
-	<extension point="kodi.context.item" library="context_toggle.py">
-		<provides>executable</provides>	
-			<item>
-				<label>Preferred toggle</label>
-				<visible>!System.HasAddon(context.metallic) + !Skin.HasSetting(Toggling)</visible>
-			</item>
-	</extension>
-	<extension point="kodi.context.item" library="context_movie.py">
-		<provides>executable</provides>	
-			<item>
-				<label>$ADDON[plugin.video.metallic 30602]</label>
-				<visible>StringCompare(ListItem.dbtype,movie) + SubString(ListItem.Path, plugin.video.metallic)</visible>
-			</item>
-	</extension>
-	<extension point="kodi.context.item" library="context_tvshow.py">
-		<provides>executable</provides>	
-			<item>
-				<label>$ADDON[plugin.video.metallic 30602]</label>
-				<visible>StringCompare(ListItem.dbtype,tvshow) + SubString(ListItem.Path, plugin.video.metallic)</visible>
-			</item>
-	</extension>
-	<extension point="kodi.context.item" library="context_live.py">
-		<provides>executable</provides>	
-			<item>
-				<label>$ADDON[plugin.video.metallic 30602]</label>
-				<visible>[SubString(ListItem.FileNameAndPath, plugin.video.metallic\\Live) | SubString(ListItem.FileNameAndPath, plugin.video.metallic/Live)]</visible>
-			</item>
-	</extension>
-	<extension point="kodi.context.item" library="context_playable.py">
-		<provides>executable</provides>	
-			<item>
-				<label>$ADDON[plugin.video.metallic 30622]</label>
-				<visible>!System.HasAddon(context.metallic) + !Skin.HasSetting(Contexting)</visible>
-			</item>
+	<extension point="kodi.context.item">
+		<menu id="kodi.core.main">
+			<menu>
+				<label>Metallic</label>
+				<item library="context_toggle.py">
+					<label>Preferred toggle</label>
+					<visible>!System.HasAddon(context.metallic) + !Skin.HasSetting(Toggling)</visible>
+				</item>
+				<item library="context_movie.py">
+					<label>$ADDON[plugin.video.metallic 30602]</label>
+					<visible>StringCompare(ListItem.dbtype,movie) + SubString(ListItem.Path, plugin.video.metallic)</visible>
+				</item>
+				<item library="context_tvshow.py">
+					<label>$ADDON[plugin.video.metallic 30602]</label>
+					<visible>StringCompare(ListItem.dbtype,tvshow) + SubString(ListItem.Path, plugin.video.metallic)</visible>
+				</item>
+				<item library="context_live.py">
+					<label>$ADDON[plugin.video.metallic 30602]</label>
+					<visible>[SubString(ListItem.FileNameAndPath, plugin.video.metallic\\Live) | SubString(ListItem.FileNameAndPath, plugin.video.metallic\\Live)]</visible>
+				</item>
+				<item library="context_playable.py">
+					<label>$ADDON[plugin.video.metallic 30622]</label>
+					<visible>!System.HasAddon(context.metallic) + !Skin.HasSetting(Contexting)</visible>
+				</item>
+			</menu>
+		</menu>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
