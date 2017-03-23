@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addons>
-<addon id="repository.vitorp07" name="vitorp07's Repository" version="1.1" provider-name="vitorp07">
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.vitorp07" name="vitorp07's Repository" version="1.2" provider-name="vitorp07">
 	<extension point="xbmc.addon.repository" name="vitorp07's Repository">
 		<info compressed="false">https://raw.githubusercontent.com/vitorp07/repository.vitorp07/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/vitorp07/repository.vitorp07/master/addons.xml.md5</checksum>
@@ -13,22 +12,7 @@
 	</extension>
 </addon>
 
-<addon id="service.3denabler.samsungtv" name="3D Enabler" version="1.0" provider-name="vitorp07, Pavel Kuzub">
-        <requires>
-                <import addon="xbmc.python"              version="2.14.0"/>
-                <import addon="script.module.simplejson" version="2.0.10"/>
-        </requires>
-        <extension point="xbmc.service"       library="service.py" start="login"/>
-        <extension point="xbmc.python.script" library="script.py"/>
-        <extension point="xbmc.addon.metadata">
-                <platform>all</platform>
-                <summary lang="en">Switch compatible Samsung TV into 3D mode when playing 3D movie</summary>
-                <description lang="en">When a 3D movie is started - the compatible Samsung 3DTV that is connected to the same network will switch to respective 3D mode automatically</description>
-                <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        </extension>
-</addon>
-
-<addon id="skin.estuary" version="3.0.0" name="Estuary" provider-name="vitorp07, phil65, Ichabod Fletchman">
+<addon id="skin.estuary" version="3.1" name="Estuary" provider-name="vitorp07, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -47,9 +31,6 @@
 		<disclaimer lang="en_US">Estuary is the default skin for Kodi, removing it may cause issues</disclaimer>
 		<disclaimer lang="en_GB">Estuary is the default skin for Kodi, removing it may cause issues</disclaimer>
 		<platform>all</platform>
-		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
-		<forum>http://forum.kodi.tv/</forum>
-		<source>https://github.com/xbmc/skin.estuary/</source>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
@@ -65,7 +46,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.metallic" name="Metallic" version="1.5" provider-name="vitorp07, OpenELEQ, MetaTeam">
+<addon id="plugin.video.metallic" name="Metallic" version="1.6" provider-name="vitorp07, OpenELEQ, MetaTeam">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.requests" version="2.9.1"/>
@@ -118,52 +99,67 @@
 	</extension>
 </addon>
 
-<addon id="script.extendedinfo" name="ExtendedInfo Mod" version="6.0.3" provider-name="vitorp07, OpenELEQ, phil65">
-  <requires>
-    <import addon="xbmc.python"                     version="2.25.0"/>
-    <import addon="plugin.video.youtube"            version="5.3.10"/>
-    <import addon="script.module.pil"               version="1.1.7"/>
-    <import addon="script.module.requests"          version="1.1.0"/>
-    <import addon="script.module.simplejson"        version="2.0.10"/>
-    <import addon="script.module.urlresolver"       version="1.0.0"/>
-    <import addon="script.module.youtube.dl"        version="14.519.1"/>
-  </requires>
-  <extension point="xbmc.python.script"             library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.python.library"            library="default.py" />
-  <extension point="xbmc.python.pluginsource"       library="plugin.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Extended Info Mod</summary>
-    <description lang="en">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions. Uses Metallic for library functions.</description>
-    <platform>all</platform>
-  </extension>
+<addon id="script.extendedinfo" name="ExtendedInfo Mod" version="6.0.4" provider-name="vitorp07, OpenELEQ, phil65">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="plugin.video.metallic" version="1.3"/>
+		<import addon="context.extendedinfo.dialog" version="1.1"/>
+		<import addon="plugin.video.youtube" version="5.3.10"/>
+		<import addon="script.module.pil" version="1.1.7"/>
+		<import addon="script.module.requests" version="1.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+		<import addon="script.module.urlresolver" version="1.0.0"/>
+		<import addon="script.module.youtube.dl" version="14.519.1"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.python.library" library="default.py" />
+	<extension point="xbmc.python.pluginsource" library="plugin.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Extended Info Mod</summary>
+		<description lang="en">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions. Uses Metallic for library functions.</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
-<addon id="context.extendedinfo.dialog" name="ExtendedInfo - Open dialog" version="1.1" provider-name="vitorp07, phil65">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="script.extendedinfo" version="6.0.3"/>
-  </requires>
-  <extension point="kodi.context.item">
-    <menu id="kodi.core.main">
-      <item library="addon.py">
-        <label>32000</label>
-        <visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,actor) | String.IsEqual(ListItem.dbtype,director)</visible>
-      </item>
-    </menu>
-  </extension>
-  <extension point="kodi.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Open ExtendedInfo dialog from context menu in library</summary>
-    <description lang="en">Open ExtendedInfo dialog from context menu in library. Needs ExtendedInfo installed and activated. Available for movies, tv shows and seasons currently.</description>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-  </extension>
+<addon id="context.extendedinfo.dialog" name="ExtendedInfo - Open dialog" version="1.2" provider-name="vitorp07, phil65">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.extendedinfo" version="6.0.2"/>
+	</requires>
+	<extension point="kodi.context.item">
+		<menu id="kodi.core.main">
+			<item library="addon.py">
+				<label>32000</label>
+				<visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,actor) | String.IsEqual(ListItem.dbtype,director)</visible>
+			</item>
+		</menu>
+	</extension>
+	<extension point="kodi.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Open ExtendedInfo dialog from context menu in library</summary>
+		<description lang="en">Open ExtendedInfo dialog from context menu in library. Needs ExtendedInfo installed and activated. Available for movies, tv shows and seasons currently.</description>
+	</extension>
 </addon>
 
-<addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="3.0.2" provider-name="vitorp07, brianhornsby">
+<addon id="service.3denabler.samsungtv" name="3D Enabler" version="1.1" provider-name="vitorp07, Pavel Kuzub">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+	</requires>
+	<extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.python.script" library="script.py"/>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Switch compatible Samsung TV into 3D mode when playing 3D movie</summary>
+		<description lang="en">When a 3D movie is started - the compatible Samsung 3DTV that is connected to the same network will switch to respective 3D mode automatically</description>
+	</extension>
+</addon>
+
+<addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="3.0.3" provider-name="vitorp07, brianhornsby">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
@@ -175,108 +171,69 @@
 		<platform>all</platform>
 		<summary lang="en">TuneIn Radio</summary>
 		<description lang="en">TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description>
-		<language></language>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=119315</forum>
-		<website>http://brianhornsby.com/kodi_addons/tuneinradio</website>
-		<source>https://github.com/brianhornsby/plugin.audio.tuneinradio</source>
+	</extension>
+</addon>
+
+<addon id="screensaver.rsxs.solarwinds" version="2.0.0.0" name="Solarwinds" provider-name="vitorp07, mogumbo, Team XBMC">
+	<requires>
+		<c-pluff version="0.1"/>
+	</requires>
+	<extension point="xbmc.ui.screensaver" library_linux="screensaver.rsxs.solarwinds.so"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">A mesmerising particle effects screensaver</summary>
+		<description lang="en">This is a very mesmerising particle effects screensaver. You'll find that you can achieve an amazing number of different patterns</description>
+		<platform>linux</platform>
+	</extension>
+</addon>
+
+<addon id="visualization.fishbmc" version="5.0.0.0" name="FishBMC" provider-name="vitorp07, 26elf">
+	<extension point="xbmc.player.musicviz" library_linux="visualization.fishbmc.so"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Visualisation showing Waves and Blur Effects</summary>
+		<description lang="en">fishBMC is based on fische, a standalone sound visualisation tool</description>
+		<disclaimer lang="en">If this breaks anything, the pieces remain yours</disclaimer>
+		<platform>linux</platform>
 	</extension>
 </addon>
 
 <addon id="visualization.projectm" version="2.0.0.0" name="projectM" provider-name="vitorp07, Team XBMC">
-  <extension point="xbmc.player.musicviz" library_linux="visualization.projectm.so">
-    <settings>
-      <userdirs>
-        <userdir path="special://profile/addon_data/visualization.projectm"/>
-      </userdirs>
-    </settings>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">projectM takes you flying through the soundwaves you're hearing</summary>
-    <summary lang="en_AU">projectM takes you flying through the soundwaves you're hearing</summary>
-    <summary lang="en_NZ">projectM takes you flying through the soundwaves you're hearing</summary>
-    <summary lang="en_US">projectM takes you flying through the soundwaves you're hearing</summary>
-    <description lang="en">projectM is an awesome music visualiser. There is nothing better in the world of Unix. projectM's greatness comes from the hard work of the community. Users like you can create presets that connect music with incredible visuals. Try it!
-projectM Visualisation is an LGPL'ed reimplementation of Milkdrop under OpenGL
-All projectM requires is a video card with 3D acceleration and your favourite music.</description>
-    <description lang="en_AU">projectM is an awesome music visualiser. There is nothing better in the world of Unix. projectM's greatness comes from the hard work of the community. Users like you can create presets that connect music with incredible visuals. Try it!
-projectM Visualisation is an LGPL'ed reimplementation of Milkdrop under OpenGL
-All projectM requires is a video card with 3D acceleration and your favourite music.</description>
-    <description lang="en_NZ">projectM is an awesome music visualiser. There is nothing better in the world of Unix. projectM's greatness comes from the hard work of the community. Users like you can create presets that connect music with incredible visuals. Try it!
-projectM Visualisation is an LGPL'ed reimplementation of Milkdrop under OpenGL
-All projectM requires is a video card with 3D acceleration and your favourite music.</description>
-    <description lang="en_US">projectM is an awesome music visualizer. There is nothing better in the world of Unix. projectM's greatness comes from the hard work of the community. Users like you can create presets that connect music with incredible visuals. Try it!
-projectM Visualization is an LGPL'ed reimplementation of Milkdrop under OpenGL
-All projectM requires is a video card with 3D acceleration and your favorite music.</description>
-    <platform>linux</platform>
-  </extension>
-</addon>
-
-<addon id="screensaver.rsxs.solarwinds" version="2.0.0.0" name="Solarwinds" provider-name="vitorp07, mogumbo, Team XBMC">
-  <requires>
-    <c-pluff version="0.1"/>
-  </requires>
-  <extension point="xbmc.ui.screensaver" library_linux="screensaver.rsxs.solarwinds.so"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">A mesmerising particle effects screensaver</summary>
-    <summary lang="en_AU">A mesmerising particle effects screensaver</summary>
-    <summary lang="en_NZ">A mesmerising particle effects screensaver</summary>
-    <summary lang="en_US">A mesmerizing particle effects screensaver</summary>
-    <description lang="en">This is a very mesmerising particle effects screensaver. You'll find that you can achieve an amazing number of different patterns.</description>
-    <description lang="en_AU">This is a very mesmerising particle effects screensaver. You'll find that you can achieve an amazing number of different patterns.</description>
-    <description lang="en_NZ">This is a very mesmerising particle effects screensaver. You'll find that you can achieve an amazing number of different patterns.</description>
-    <description lang="en_US">This is a very mesmerizing particle effects screensaver. You'll find that you can achieve an amazing number of different patterns.</description>
-    <platform>linux</platform>
-  </extension>
-</addon>
-
-<addon id="visualization.fishbmc" version="5.0.0.0" name="FishBMC" provider-name="vitorp07, 26elf">
-  <extension point="xbmc.player.musicviz" library_linux="visualization.fishbmc.so"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Visualisation showing Waves and Blur Effects</summary>
-    <summary lang="en_AU">Visualisation showing Waves and Blur Effects</summary>
-    <summary lang="en_NZ">Visualisation showing Waves and Blur Effects</summary>
-    <description lang="en">fishBMC is based on fische, a standalone sound visualisation tool. The basic principle is: draw the waveform and smear the drawing along predefined vectors. However fische also incorporates advanced beat detection, which really guarantees a great visual experience.</description>
-    <description lang="en_AU">fishBMC is based on fische, a standalone sound visualisation tool. The basic principle is: draw the waveform and smear the drawing along predefined vectors. However fische also incorporates advanced beat detection, which really guarantees a great visual experience.</description>
-    <description lang="en_NZ">fishBMC is based on fische, a standalone sound visualisation tool. The basic principle is: draw the waveform and smear the drawing along predefined vectors. However fische also incorporates advanced beat detection, which really guarantees a great visual experience.</description>
-    <disclaimer lang="en">If this breaks anything, the pieces remain yours.</disclaimer>
-    <disclaimer lang="en_AU">If this breaks anything, the pieces remain yours.</disclaimer>
-    <disclaimer lang="en_NZ">If this breaks anything, the pieces remain yours.</disclaimer>
-    <platform>linux</platform>
-  </extension>
+	<extension point="xbmc.player.musicviz" library_linux="visualization.projectm.so">
+		<settings>
+			<userdirs>
+				<userdir path="special://profile/addon_data/visualization.projectm"/>
+			</userdirs>
+		</settings>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">projectM takes you flying through the soundwaves you're hearing</summary>
+		<description lang="en">projectM Visualisation is an LGPL'ed reimplementation of Milkdrop under OpenGL</description>
+		<platform>linux</platform>
+	</extension>
 </addon>
 
 <addon id="visualization.shadertoy" version="2.0.0.0" name="Shadertoy" provider-name="vitorp07, Team-Kodi">
-  <extension point="xbmc.player.musicviz" library_linux="visualization.shadertoy.so"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Visualisations from Shadertoy</summary>
-    <description lang="en">Visualisations from Shadertoy</description>
-    <platform>linux</platform>
-  </extension>
+	<extension point="xbmc.player.musicviz" library_linux="visualization.shadertoy.so"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Visualisations from Shadertoy</summary>
+		<description lang="en">Visualisations from Shadertoy</description>
+		<platform>linux</platform>
+	</extension>
 </addon>
 
 <addon id="visualization.spectrum" version="2.0.0.0" name="Spectrum" provider-name="vitorp07, Team XBMC">
-  <extension point="xbmc.player.musicviz" library_linux="visualization.spectrum.so"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Visualisation showing a rotating 3D Spectrum Analyzer</summary>
-    <description lang="en">Spectrum is a Visualisation showing a rotating 3D Spectrum Analyzer rendered in  that moves to the beat of the music creating a wave effect across the spectrum grid.
-It also has settings to adjust the spectrum bar height, Its speed, and how the bars are rendered (solid, points, wire frame) and is a nice light weight, low cpu useage visualisation that looks great</description>
-    <platform>linux</platform>
-  </extension>
+	<extension point="xbmc.player.musicviz" library_linux="visualization.spectrum.so"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Visualisation showing a rotating 3D Spectrum Analyzer</summary>
+		<description lang="en">Spectrum is a Visualisation showing a rotating 3D Spectrum Analyzer rendered in that moves to the beat of the music</description>
+		<platform>linux</platform>
+	</extension>
 </addon>
 
 <addon id="visualization.waveform" version="2.0.0.0" name="Waveform" provider-name="vitorp07, MrC">
-  <extension point="xbmc.player.musicviz" library_linux="visualization.waveform.so"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Visualisation showing 2 Waveform Graphs on the screen</summary>
-    <summary lang="en_AU">Visualisation showing 2 Waveform Graphs on the screen</summary>
-    <summary lang="en_NZ">Visualisation showing 2 Waveform Graphs on the screen</summary>
-    <summary lang="en_US">Visualization showing 2 Waveform Graphs on the screen</summary>
-    <description lang="en">Waveform is a simple Visualisation showing 2 Waveform Graphs on the screen, One each for Left and Right channels that move to the beat of the music</description>
-    <description lang="en_AU">Waveform is a simple Visualisation showing 2 Waveform Graphs on the screen, one each for Left and Right channels that move to the beat of the music</description>
-    <description lang="en_NZ">Waveform is a simple Visualisation showing 2 Waveform Graphs on the screen, One each for Left and Right channels that move to the beat of the music</description>
-    <description lang="en_US">Waveform is a simple Visualization showing 2 Waveform Graphs on the screen, One each for Left and Right channels that move to the beat of the music</description>
-    <platform>linux</platform>
-  </extension>
-</addon>	
-</addons>
+	<extension point="xbmc.player.musicviz" library_linux="visualization.waveform.so"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Visualisation showing 2 Waveform Graphs on the screen</summary>
+		<description lang="en">Waveform is a simple Visualisation showing 2 Waveform Graphs on the screen that move to the beat of the music</description>
+		<platform>linux</platform>
+	</extension>
+</addon>
