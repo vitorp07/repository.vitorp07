@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<addons>
 <addon id="repository.vitorp07" name="vitorp07's Repository" version="1.2" provider-name="vitorp07">
 	<extension point="xbmc.addon.repository" name="vitorp07's Repository">
 		<info compressed="false">https://raw.githubusercontent.com/vitorp07/repository.vitorp07/master/addons.xml</info>
@@ -237,3 +238,4 @@
 		<platform>linux</platform>
 	</extension>
 </addon>
+</addons>
