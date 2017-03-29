@@ -13,7 +13,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.estuary" version="3.1" name="Estuary" provider-name="vitorp07, phil65, Ichabod Fletchman">
+<addon id="skin.estuary" version="3.2" name="Estuary" provider-name="vitorp07, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -100,11 +100,10 @@
 	</extension>
 </addon>
 
-<addon id="script.extendedinfo" name="ExtendedInfo Mod" version="6.0.4" provider-name="vitorp07, OpenELEQ, phil65">
+<addon id="script.extendedinfo" name="ExtendedInfo Mod" version="6.0.5" provider-name="vitorp07, OpenELEQ, phil65">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="plugin.video.metallic" version="1.3"/>
-		<import addon="context.extendedinfo.dialog" version="1.1"/>
 		<import addon="plugin.video.youtube" version="5.3.10"/>
 		<import addon="script.module.pil" version="1.1.7"/>
 		<import addon="script.module.requests" version="1.1.0"/>
@@ -113,36 +112,24 @@
 		<import addon="script.module.youtube.dl" version="14.519.1"/>
 	</requires>
 	<extension point="xbmc.python.script" library="default.py">
-		<provides>executable</provides>
+		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.python.library" library="default.py" />
 	<extension point="xbmc.python.pluginsource" library="plugin.py">
-		<provides>video</provides>
+		<provides>executable</provides>
 	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Extended Info Mod</summary>
-		<description lang="en">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions. Uses Metallic for library functions.</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="context.extendedinfo.dialog" name="ExtendedInfo - Open dialog" version="1.2" provider-name="vitorp07, phil65">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-		<import addon="script.extendedinfo" version="6.0.2"/>
-	</requires>
 	<extension point="kodi.context.item">
 		<menu id="kodi.core.main">
-			<item library="addon.py">
-				<label>32000</label>
+			<item library="context.py">
+				<label>32999</label>
 				<visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,actor) | String.IsEqual(ListItem.dbtype,director)</visible>
 			</item>
 		</menu>
 	</extension>
-	<extension point="kodi.addon.metadata">
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">ExtendedInfo Mod</summary>
+		<description lang="en">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions. Uses Metallic for library functions.</description>
 		<platform>all</platform>
-		<summary lang="en">Open ExtendedInfo dialog from context menu in library</summary>
-		<description lang="en">Open ExtendedInfo dialog from context menu in library. Needs ExtendedInfo installed and activated. Available for movies, tv shows and seasons currently.</description>
 	</extension>
 </addon>
 
