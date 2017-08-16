@@ -47,7 +47,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.metallic" name="Metallic" version="1.9" provider-name="vitorp07, OpenELEQ, MetaTeam">
+<addon id="plugin.video.metallic" name="Metallic" version="2.0" provider-name="vitorp07, OpenELEQ, MetaTeam">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.requests" version="2.9.1"/>
