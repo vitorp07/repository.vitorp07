@@ -47,7 +47,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.metallic" name="Metallic" version="2.0" provider-name="vitorp07, OpenELEQ, MetaTeam">
+<addon id="plugin.video.metallic" name="Metallic" version="2.1" provider-name="vitorp07, OpenELEQ, MetaTeam">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.requests" version="2.9.1"/>
@@ -100,7 +100,7 @@
 	</extension>
 </addon>
 
-<addon id="script.extendedinfo" name="ExtendedInfo Mod" version="6.0.6" provider-name="vitorp07, OpenELEQ, phil65">
+<addon id="script.extendedinfo" name="ExtendedInfo Mod" version="6.0.7" provider-name="vitorp07, OpenELEQ, phil65">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="plugin.video.metallic" version="1.3"/>
