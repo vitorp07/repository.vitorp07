@@ -12,6 +12,39 @@
 		<platform>all</platform>
 	</extension>
 </addon>
+<addon id="skin.estuary" version="3.4" name="Estuary" provider-name="vitorp07, phil65, Ichabod Fletchman">
+	<requires>
+		<import addon="xbmc.gui" version="5.12.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_US">Estuary skin by vitorp07, phil65 and Piers. (Kodi's default skin)</summary>
+		<summary lang="en_GB">Estuary skin by vitorp07, phil65 and Piers. (Kodi's default skin)</summary>
+		<description lang="en_US">Estuary is the default skin for Kodi 17.0 and above. It attempts to be easy for first time Kodi users to understand and use.</description>
+		<description lang="en_GB">Estuary is the default skin for Kodi 17.0 and above. It attempts to be easy for first time Kodi users to understand and use.</description>
+		<disclaimer lang="en_US">Estuary is the default skin for Kodi, removing it may cause issues</disclaimer>
+		<disclaimer lang="en_GB">Estuary is the default skin for Kodi, removing it may cause issues</disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+			<screenshot>resources/screenshot-06.jpg</screenshot>
+			<screenshot>resources/screenshot-07.jpg</screenshot>
+			<screenshot>resources/screenshot-08.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
 <addon id="plugin.video.metallic" name="Metallic" version="2.1" provider-name="vitorp07, OpenELEQ, MetaTeam">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -149,6 +182,78 @@
 		<description lang="en">This addon will exit Kodi and launch Windows Explorer.</description>
 		<platform>windx</platform>
 		<language>en</language>
+	</extension>
+</addon>
+<addon id="script.bigbox.launcher" name="Big Box" version="1.0" provider-name="vitorp07">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Launches LaunchBox in Big Box mode from within Kodi.</summary>
+		<description lang="en">This addon will exit Kodi, launch LaunchBox in Big Box mode and restart Kodi when LaunchBox is closed.</description>
+		<platform>windx</platform>
+		<language>en</language>
+	</extension>
+</addon>
+<addon id="screensaver.rsxs.solarwinds" version="2.0.0.0" name="Solarwinds" provider-name="vitorp07, mogumbo, Team XBMC">
+	<requires>
+		<c-pluff version="0.1"/>
+	</requires>
+	<extension point="xbmc.ui.screensaver" library_linux="screensaver.rsxs.solarwinds.so"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">A mesmerising particle effects screensaver</summary>
+		<description lang="en">This is a very mesmerising particle effects screensaver. You'll find that you can achieve an amazing number of different patterns</description>
+		<platform>linux</platform>
+	</extension>
+</addon>
+<addon id="visualization.fishbmc" version="5.0.0.0" name="FishBMC" provider-name="vitorp07, 26elf">
+	<extension point="xbmc.player.musicviz" library_linux="visualization.fishbmc.so"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Visualisation showing Waves and Blur Effects</summary>
+		<description lang="en">fishBMC is based on fische, a standalone sound visualisation tool</description>
+		<disclaimer lang="en">If this breaks anything, the pieces remain yours</disclaimer>
+		<platform>linux</platform>
+	</extension>
+</addon>
+<addon id="visualization.projectm" version="2.0.0.0" name="projectM" provider-name="vitorp07, Team XBMC">
+	<extension point="xbmc.player.musicviz" library_linux="visualization.projectm.so">
+		<settings>
+			<userdirs>
+				<userdir path="special://profile/addon_data/visualization.projectm"/>
+			</userdirs>
+		</settings>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">projectM takes you flying through the soundwaves you're hearing</summary>
+		<description lang="en">projectM Visualisation is an LGPL'ed reimplementation of Milkdrop under OpenGL</description>
+		<platform>linux</platform>
+	</extension>
+</addon>
+<addon id="visualization.shadertoy" version="2.0.0.0" name="Shadertoy" provider-name="vitorp07, Team-Kodi">
+	<extension point="xbmc.player.musicviz" library_linux="visualization.shadertoy.so"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Visualisations from Shadertoy</summary>
+		<description lang="en">Visualisations from Shadertoy</description>
+		<platform>linux</platform>
+	</extension>
+</addon>
+<addon id="visualization.spectrum" version="2.0.0.0" name="Spectrum" provider-name="vitorp07, Team XBMC">
+	<extension point="xbmc.player.musicviz" library_linux="visualization.spectrum.so"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Visualisation showing a rotating 3D Spectrum Analyzer</summary>
+		<description lang="en">Spectrum is a Visualisation showing a rotating 3D Spectrum Analyzer rendered in that moves to the beat of the music</description>
+		<platform>linux</platform>
+	</extension>
+</addon>
+<addon id="visualization.waveform" version="2.0.0.0" name="Waveform" provider-name="vitorp07, MrC">
+	<extension point="xbmc.player.musicviz" library_linux="visualization.waveform.so"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Visualisation showing 2 Waveform Graphs on the screen</summary>
+		<description lang="en">Waveform is a simple Visualisation showing 2 Waveform Graphs on the screen that move to the beat of the music</description>
+		<platform>linux</platform>
 	</extension>
 </addon>
 </addons>
