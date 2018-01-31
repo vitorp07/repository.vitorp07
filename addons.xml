@@ -165,9 +165,16 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Launches Google Chrome from within Kodi.</summary>
-		<description lang="en">This addon will exit Kodi, launch Google Chrome and restart Kodi when Chrome is closed.</description>
+		<description lang="en">This addon will close Kodi, launch Google Chrome and restart Kodi when Chrome is closed.</description>
 		<platform>windx</platform>
 		<language>en</language>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+		</assets>		
 	</extension>
 </addon>
 <addon id="script.explorer.launcher" name="Windows Explorer" version="1.0" provider-name="vitorp07">
@@ -179,9 +186,16 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Launches Windows Explorer from within Kodi.</summary>
-		<description lang="en">This addon will close Kodi, launch Windows Explorer and wait until Kodi is launched to close Windows Explorer.</description>
+		<description lang="en">This addon will close Kodi, launch Windows Explorer and wait until Kodi is relaunched to close Windows Explorer.</description>
 		<platform>windx</platform>
 		<language>en</language>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+		</assets>		
 	</extension>
 </addon>
 <addon id="script.bigbox.launcher" name="Big Box" version="1.0" provider-name="vitorp07">
@@ -193,7 +207,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Launches LaunchBox in Big Box mode from within Kodi.</summary>
-		<description lang="en">This addon will exit Kodi, launch LaunchBox in Big Box mode and restart Kodi when LaunchBox is closed.</description>
+		<description lang="en">This addon will close Kodi, launch LaunchBox in Big Box mode and restart Kodi when LaunchBox is closed.</description>
 		<platform>windx</platform>
 		<language>en</language>
 		<assets>
@@ -214,7 +228,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Launches LaunchBox from within Kodi.</summary>
-		<description lang="en">This addon will exit Kodi, launch LaunchBox and restart Kodi when LaunchBox is closed.</description>
+		<description lang="en">This addon will close Kodi, launch LaunchBox and restart Kodi when LaunchBox is closed.</description>
 		<platform>windx</platform>
 		<language>en</language>
 		<assets>
@@ -224,6 +238,27 @@
 			<screenshot>resources/screenshot-02.jpg</screenshot>
 			<screenshot>resources/screenshot-03.jpg</screenshot>
 		</assets>
+	</extension>
+</addon>
+<addon id="script.nvcontrolpanel.launcher" name="NVIDIA Control Panel" version="1.0" provider-name="vitorp07">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Launches the NVIDIA Control Panel from within Kodi.</summary>
+		<description lang="en">This addon will close Kodi, launch the NVIDIA Control Panel and restart Kodi when the NVIDIA Control Panel is closed.</description>
+		<platform>windx</platform>
+		<language>en</language>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+		</assets>		
 	</extension>
 </addon>
 <addon id="screensaver.rsxs.solarwinds" version="2.0.0.0" name="Solarwinds" provider-name="vitorp07, mogumbo, Team XBMC">
