@@ -164,8 +164,8 @@
 		<provides>executable</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Launches Chrome from within Kodi.</summary>
-		<description lang="en">This addon will exit Kodi, launch Chrome and restart Kodi when Chrome is closed.</description>
+		<summary lang="en">Launches Google Chrome from within Kodi.</summary>
+		<description lang="en">This addon will exit Kodi, launch Google Chrome and restart Kodi when Chrome is closed.</description>
 		<platform>windx</platform>
 		<language>en</language>
 	</extension>
@@ -179,7 +179,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Launches Windows Explorer from within Kodi.</summary>
-		<description lang="en">This addon will exit Kodi and launch Windows Explorer.</description>
+		<description lang="en">This addon will close Kodi, launch Windows Explorer and wait until Kodi is launched to close Windows Explorer.</description>
 		<platform>windx</platform>
 		<language>en</language>
 	</extension>
@@ -196,6 +196,12 @@
 		<description lang="en">This addon will exit Kodi, launch LaunchBox in Big Box mode and restart Kodi when LaunchBox is closed.</description>
 		<platform>windx</platform>
 		<language>en</language>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>screenshot-01.jpg</screenshot>
+			<screenshot>screenshot-02.jpg</screenshot>
+		</assets>
 	</extension>
 </addon>
 <addon id="screensaver.rsxs.solarwinds" version="2.0.0.0" name="Solarwinds" provider-name="vitorp07, mogumbo, Team XBMC">
