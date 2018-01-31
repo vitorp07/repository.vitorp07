@@ -197,10 +197,32 @@
 		<platform>windx</platform>
 		<language>en</language>
 		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-			<screenshot>screenshot-01.jpg</screenshot>
-			<screenshot>screenshot-02.jpg</screenshot>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="script.launchbox.launcher" name="Launchbox" version="1.0" provider-name="vitorp07">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Launches LaunchBox from within Kodi.</summary>
+		<description lang="en">This addon will exit Kodi, launch LaunchBox and restart Kodi when LaunchBox is closed.</description>
+		<platform>windx</platform>
+		<language>en</language>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
 		</assets>
 	</extension>
 </addon>
