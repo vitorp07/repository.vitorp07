@@ -12,7 +12,7 @@
 		<platform>all</platform>
 	</extension>
 </addon>
-<addon id="skin.estuary" version="3.4" name="Estuary" provider-name="vitorp07, phil65, Ichabod Fletchman">
+<addon id="skin.estuary" version="3.5" name="Estuary" provider-name="vitorp07, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -219,7 +219,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="script.launchbox.launcher" name="Launchbox" version="1.0" provider-name="vitorp07">
+<addon id="script.launchbox.launcher" name="LaunchBox" version="1.0" provider-name="vitorp07">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
