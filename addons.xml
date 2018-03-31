@@ -156,7 +156,7 @@
 		<description lang="en">TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description>
 	</extension>
 </addon>
-<addon id="script.chrome.launcher" name="Chrome" version="1.0" provider-name="vitorp07">
+<addon id="script.chrome.launcher" name="Chrome Launcher" version="1.1" provider-name="vitorp07">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -177,7 +177,7 @@
 		</assets>		
 	</extension>
 </addon>
-<addon id="script.explorer.launcher" name="Windows Explorer" version="1.0" provider-name="vitorp07">
+<addon id="script.explorer.launcher" name="Windows Explorer Launcher" version="1.1" provider-name="vitorp07">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -198,7 +198,7 @@
 		</assets>		
 	</extension>
 </addon>
-<addon id="script.bigbox.launcher" name="Big Box" version="1.0" provider-name="vitorp07">
+<addon id="script.bigbox.launcher" name="Big Box Launcher" version="1.1" provider-name="vitorp07">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -219,7 +219,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="script.launchbox.launcher" name="LaunchBox" version="1.0" provider-name="vitorp07">
+<addon id="script.launchbox.launcher" name="LaunchBox Launcher" version="1.1" provider-name="vitorp07">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -240,7 +240,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="script.nvcontrolpanel.launcher" name="NVIDIA Control Panel" version="1.0" provider-name="vitorp07">
+<addon id="script.nvcontrolpanel.launcher" name="NVIDIA Control Panel Launcher" version="1.1" provider-name="vitorp07">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
