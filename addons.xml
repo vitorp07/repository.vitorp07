@@ -96,10 +96,9 @@
 		<platform>all</platform>
 	</extension>
 </addon>
-<addon id="service.3denabler.samsungtv" name="3D Enabler" version="1.1" provider-name="vitorp07, Pavel Kuzub">
+<addon id="service.3denabler.samsungtv" name="3D Enabler" version="1.2" provider-name="vitorp07, Pavel Kuzub">
 	<requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-		<import addon="script.module.simplejson" version="2.0.10"/>
+		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
 	<extension point="xbmc.service" library="service.py" start="login"/>
 	<extension point="xbmc.python.script" library="script.py"/>
