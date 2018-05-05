@@ -47,7 +47,7 @@
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.futures" version="2.2.0"/>
 		<import addon="script.module.requests" version="2.9.1"/>
-		<import addon="script.module.requests-cache" version="0.4.13"/>
+		<import addon="script.module.requests-cache"/>
 	</requires>
 	<extension point="xbmc.service" library="service.py" start="startup"/>
 	<extension point="xbmc.python.pluginsource" library="default.py">
