@@ -12,7 +12,7 @@
 		<platform>all</platform>
 	</extension>
 </addon>
-<addon id="skin.estuary" version="3.6" name="Estuary" provider-name="vitorp07, phil65, Ichabod Fletchman">
+<addon id="skin.estuary" version="3.7" name="Estuary" provider-name="vitorp07, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -24,12 +24,9 @@
 		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en_US">Estuary skin by vitorp07, phil65 and Piers. (Kodi's default skin)</summary>
-		<summary lang="en_GB">Estuary skin by vitorp07, phil65 and Piers. (Kodi's default skin)</summary>
-		<description lang="en_US">Estuary is the default skin for Kodi 17.0 and above. It attempts to be easy for first time Kodi users to understand and use.</description>
-		<description lang="en_GB">Estuary is the default skin for Kodi 17.0 and above. It attempts to be easy for first time Kodi users to understand and use.</description>
-		<disclaimer lang="en_US">Estuary is the default skin for Kodi, removing it may cause issues</disclaimer>
-		<disclaimer lang="en_GB">Estuary is the default skin for Kodi, removing it may cause issues</disclaimer>
+		<summary>Estuary skin by vitorp07, phil65 and Piers. (Kodi's default skin)</summary>
+		<description>Estuary is the default skin for Kodi 17.0 and above. It attempts to be easy for first time Kodi users to understand and use.</description>
+		<disclaimer>Estuary is the default skin for Kodi, removing it may cause issues</disclaimer>
 		<platform>all</platform>
 		<assets>
 			<icon>resources/icon.png</icon>
@@ -43,6 +40,60 @@
 			<screenshot>resources/screenshot-07.jpg</screenshot>
 			<screenshot>resources/screenshot-08.jpg</screenshot>
 		</assets>
+	</extension>
+</addon>
+<addon id="script.meta" name="Meta" version="0.1" provider-name="vitorp07">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.futures" version="2.2.0"/>
+		<import addon="script.module.requests" version="2.9.1"/>
+		<import addon="script.module.requests-cache" version="0.4.13"/>
+	</requires>
+	<extension point="xbmc.service" library="service.py" start="startup"/>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="kodi.context.item">
+		<menu id="kodi.core.main">
+			<item library="context.py">
+				<label>Meta</label>
+				<visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)</visible>
+			</item>
+		</menu>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">TMDb, TVDb, Trakt, AudioDb and LastFM browser</summary>
+		<description lang="en">Browse The MovieDb, The TVDb, Trakt, The AudioDb and LastFM and pass info along to library or an addon. Needs player-files and the appropriate addon to play the files.</description>
+	</extension>
+</addon>
+<addon id="script.openinfo" name="OpenInfo" version="0.1" provider-name="vitorp07">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.pil" version="1.1.7"/>
+		<import addon="resource.images.studios.white" version="0.0.10"/>
+		<import addon="script.module.youtube.dl" version="18.320.0"/>
+		<import addon="plugin.video.youtube" version="5.5.1"/>
+		<import addon="script.meta" version="1.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.python.pluginsource" library="plugin.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="kodi.context.item">
+		<menu id="kodi.core.main">
+			<item library="context.py">
+				<label>OpenInfo</label>
+				<visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,actor) | String.IsEqual(ListItem.dbtype,director)</visible>
+			</item>
+		</menu>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Fork of the ExtendedInfo script from phil65</summary>
+		<description>This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Needs skin implementation for lot of functions and Meta for library functions.</description>
+		<platform>all</platform>
 	</extension>
 </addon>
 <addon id="service.3denabler.samsungtv" name="3D Enabler" version="1.1" provider-name="vitorp07, Pavel Kuzub">
