@@ -69,7 +69,7 @@
 		<description>Browse The MovieDb, The TVDb, Trakt, The AudioDb and LastFM and pass info along to library or an addon. Needs player-files and the appropriate addon to play the files.</description>
 	</extension>
 </addon>
-<addon id="script.openinfo" name="OpenInfo" version="1.1" provider-name="vitorp07">
+<addon id="script.openinfo" name="OpenInfo" version="1.2" provider-name="vitorp07">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.pil" version="1.1.7"/>
