@@ -7,15 +7,15 @@
 		<datadir zip="true">https://raw.githubusercontent.com/vitorp07/repository.vitorp07/master/zip</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
 		<summary>vitorp07's Repository</summary>
 		<description>Unofficial add-ons repository</description>
-		<platform>all</platform>
 	</extension>
 </addon>
 <addon id="skin.estuary" version="3.8" name="Estuary" provider-name="vitorp07, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
-		<import addon="resource.images.studios.white" version="0.0.12"/>
+		<import addon="resource.images.studios.white" version="0.0.10"/>
 		<import addon="resource.images.moviegenreicons.transparent" version="0.0.6"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
@@ -26,10 +26,10 @@
 		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
 		<summary>Estuary skin by vitorp07, phil65 and Piers. (Kodi's default skin)</summary>
 		<description>Estuary is the default skin for Kodi 17.0 and above. It attempts to be easy for first time Kodi users to understand and use.</description>
 		<disclaimer>Estuary is the default skin for Kodi, removing it may cause issues</disclaimer>
-		<platform>all</platform>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
@@ -93,9 +93,9 @@
 		</menu>
 	</extension>
 	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
 		<summary>Fork of the ExtendedInfo script from phil65</summary>
 		<description>This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Needs skin implementation for lot of functions and Meta for library functions.</description>
-		<platform>all</platform>
 	</extension>
 </addon>
 <addon id="service.3denabler.samsungtv" name="3D Enabler" version="1.2" provider-name="vitorp07, Pavel Kuzub">
@@ -106,8 +106,8 @@
 	<extension point="xbmc.python.script" library="script.py"/>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<summary lang="en">Switch compatible Samsung TV into 3D mode when playing 3D movie</summary>
-		<description lang="en">When a 3D movie is started - the compatible Samsung 3DTV that is connected to the same network will switch to respective 3D mode automatically</description>
+		<summary>Switch compatible Samsung TV into 3D mode when playing 3D movie</summary>
+		<description>When a 3D movie is started - the compatible Samsung 3DTV that is connected to the same network will switch to respective 3D mode automatically</description>
 	</extension>
 </addon>
 <addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="3.1" provider-name="vitorp07, brianhornsby">
@@ -123,18 +123,17 @@
 		<description>TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description>
 	</extension>
 </addon>
-<addon id="script.chrome.launcher" name="Chrome Launcher" version="1.1" provider-name="vitorp07">
+<addon id="script.chrome.launcher" name="Chrome Launcher" version="1.2" provider-name="vitorp07">
 	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
 	<extension point="xbmc.python.script" library="default.py">
 		<provides>executable</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Launches Google Chrome from within Kodi.</summary>
-		<description lang="en">This addon will close Kodi, launch Google Chrome and restart Kodi when Chrome is closed.</description>
 		<platform>windx</platform>
-		<language>en</language>
+		<summary>Launches Google Chrome from within Kodi.</summary>
+		<description>This addon will close Kodi, launch Google Chrome and restart Kodi when Chrome is closed.</description>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
@@ -144,18 +143,17 @@
 		</assets>		
 	</extension>
 </addon>
-<addon id="script.explorer.launcher" name="Windows Explorer Launcher" version="1.1" provider-name="vitorp07">
+<addon id="script.explorer.launcher" name="Windows Explorer Launcher" version="1.2" provider-name="vitorp07">
 	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
 	<extension point="xbmc.python.script" library="default.py">
 		<provides>executable</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Launches Windows Explorer from within Kodi.</summary>
-		<description lang="en">This addon will close Kodi, launch Windows Explorer and wait until Kodi is relaunched to close Windows Explorer.</description>
 		<platform>windx</platform>
-		<language>en</language>
+		<summary>Launches Windows Explorer from within Kodi.</summary>
+		<description>This addon will close Kodi, launch Windows Explorer and wait until Kodi is relaunched to close Windows Explorer.</description>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
@@ -165,18 +163,17 @@
 		</assets>		
 	</extension>
 </addon>
-<addon id="script.bigbox.launcher" name="Big Box Launcher" version="1.1" provider-name="vitorp07">
+<addon id="script.bigbox.launcher" name="Big Box Launcher" version="1.2" provider-name="vitorp07">
 	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
 	<extension point="xbmc.python.script" library="default.py">
 		<provides>executable</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Launches LaunchBox in Big Box mode from within Kodi.</summary>
-		<description lang="en">This addon will close Kodi, launch LaunchBox in Big Box mode and restart Kodi when LaunchBox is closed.</description>
 		<platform>windx</platform>
-		<language>en</language>
+		<summary>Launches LaunchBox in Big Box mode from within Kodi.</summary>
+		<description>This addon will close Kodi, launch LaunchBox in Big Box mode and restart Kodi when LaunchBox is closed.</description>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
@@ -186,18 +183,17 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="script.launchbox.launcher" name="LaunchBox Launcher" version="1.1" provider-name="vitorp07">
+<addon id="script.launchbox.launcher" name="LaunchBox Launcher" version="1.2" provider-name="vitorp07">
 	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
 	<extension point="xbmc.python.script" library="default.py">
 		<provides>executable</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Launches LaunchBox from within Kodi.</summary>
-		<description lang="en">This addon will close Kodi, launch LaunchBox and restart Kodi when LaunchBox is closed.</description>
 		<platform>windx</platform>
-		<language>en</language>
+		<summary>Launches LaunchBox from within Kodi.</summary>
+		<description>This addon will close Kodi, launch LaunchBox and restart Kodi when LaunchBox is closed.</description>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
@@ -207,18 +203,17 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="script.nvcontrolpanel.launcher" name="NVIDIA Control Panel Launcher" version="1.1" provider-name="vitorp07">
+<addon id="script.nvcontrolpanel.launcher" name="NVIDIA Control Panel Launcher" version="1.2" provider-name="vitorp07">
 	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
 	<extension point="xbmc.python.script" library="default.py">
 		<provides>executable</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Launches the NVIDIA Control Panel from within Kodi.</summary>
-		<description lang="en">This addon will close Kodi, launch the NVIDIA Control Panel and restart Kodi when the NVIDIA Control Panel is closed.</description>
 		<platform>windx</platform>
-		<language>en</language>
+		<summary>Launches the NVIDIA Control Panel from within Kodi.</summary>
+		<description>This addon will close Kodi, launch the NVIDIA Control Panel and restart Kodi when the NVIDIA Control Panel is closed.</description>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
@@ -234,18 +229,18 @@
 	</requires>
 	<extension point="xbmc.ui.screensaver" library_linux="screensaver.rsxs.solarwinds.so"/>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">A mesmerising particle effects screensaver</summary>
-		<description lang="en">This is a very mesmerising particle effects screensaver. You'll find that you can achieve an amazing number of different patterns</description>
 		<platform>linux</platform>
+		<summary>A mesmerising particle effects screensaver</summary>
+		<description>This is a very mesmerising particle effects screensaver. You'll find that you can achieve an amazing number of different patterns</description>
 	</extension>
 </addon>
 <addon id="visualization.fishbmc" version="5.0.0.0" name="FishBMC" provider-name="vitorp07, 26elf">
 	<extension point="xbmc.player.musicviz" library_linux="visualization.fishbmc.so"/>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Visualisation showing Waves and Blur Effects</summary>
-		<description lang="en">fishBMC is based on fische, a standalone sound visualisation tool</description>
-		<disclaimer lang="en">If this breaks anything, the pieces remain yours</disclaimer>
 		<platform>linux</platform>
+		<summary>Visualisation showing Waves and Blur Effects</summary>
+		<description>fishBMC is based on fische, a standalone sound visualisation tool</description>
+		<disclaimer>If this breaks anything, the pieces remain yours</disclaimer>
 	</extension>
 </addon>
 <addon id="visualization.projectm" version="2.0.0.0" name="projectM" provider-name="vitorp07, Team XBMC">
@@ -257,33 +252,33 @@
 		</settings>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">projectM takes you flying through the soundwaves you're hearing</summary>
-		<description lang="en">projectM Visualisation is an LGPL'ed reimplementation of Milkdrop under OpenGL</description>
 		<platform>linux</platform>
+		<summary>projectM takes you flying through the soundwaves you're hearing</summary>
+		<description>projectM Visualisation is an LGPL'ed reimplementation of Milkdrop under OpenGL</description>
 	</extension>
 </addon>
 <addon id="visualization.shadertoy" version="2.0.0.0" name="Shadertoy" provider-name="vitorp07, Team-Kodi">
 	<extension point="xbmc.player.musicviz" library_linux="visualization.shadertoy.so"/>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Visualisations from Shadertoy</summary>
-		<description lang="en">Visualisations from Shadertoy</description>
 		<platform>linux</platform>
+		<summary>Visualisations from Shadertoy</summary>
+		<description>Visualisations from Shadertoy</description>
 	</extension>
 </addon>
 <addon id="visualization.spectrum" version="2.0.0.0" name="Spectrum" provider-name="vitorp07, Team XBMC">
 	<extension point="xbmc.player.musicviz" library_linux="visualization.spectrum.so"/>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Visualisation showing a rotating 3D Spectrum Analyzer</summary>
-		<description lang="en">Spectrum is a Visualisation showing a rotating 3D Spectrum Analyzer rendered in that moves to the beat of the music</description>
 		<platform>linux</platform>
+		<summary>Visualisation showing a rotating 3D Spectrum Analyzer</summary>
+		<description>Spectrum is a Visualisation showing a rotating 3D Spectrum Analyzer rendered in that moves to the beat of the music</description>
 	</extension>
 </addon>
 <addon id="visualization.waveform" version="2.0.0.0" name="Waveform" provider-name="vitorp07, MrC">
 	<extension point="xbmc.player.musicviz" library_linux="visualization.waveform.so"/>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Visualisation showing 2 Waveform Graphs on the screen</summary>
-		<description lang="en">Waveform is a simple Visualisation showing 2 Waveform Graphs on the screen that move to the beat of the music</description>
 		<platform>linux</platform>
+		<summary>Visualisation showing 2 Waveform Graphs on the screen</summary>
+		<description>Waveform is a simple Visualisation showing 2 Waveform Graphs on the screen that move to the beat of the music</description>
 	</extension>
 </addon>
 </addons>
