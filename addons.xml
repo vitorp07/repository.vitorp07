@@ -44,7 +44,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="script.meta" name="Meta" version="1.9" provider-name="vitorp07">
+<addon id="script.meta" name="Meta" version="2.0" provider-name="vitorp07">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.futures" version="2.2.0"/>
@@ -52,7 +52,7 @@
 		<import addon="script.module.requests-cache" version="0.4.13"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="meta_addon.py">
-		<provides>executable</provides>
+		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="login"/>
 	<extension point="kodi.context.item">
@@ -65,8 +65,8 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<summary>TMDb, TVDb, Trakt, AudioDb and LastFM browser</summary>
-		<description>Browse The MovieDb, The TVDb, Trakt, The AudioDb and LastFM and pass info along to library or an addon. Needs player-files and the appropriate addon to play the files.</description>
+		<summary>TMDb, TVDb and Trakt browser</summary>
+		<description>Browse The MovieDb, The TVDb, Trakt and pass info along to library or an addon. Needs player-files and the appropriate addon to play the files.</description>
 	</extension>
 </addon>
 <addon id="script.openinfo" name="OpenInfo" version="1.6" provider-name="vitorp07">
