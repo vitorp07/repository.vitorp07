@@ -70,12 +70,11 @@
 		<description>Browse The MovieDb, The TVDb, Trakt and pass info along to library or an addon. Needs player-files and the appropriate addon to play the files.</description>
 	</extension>
 </addon>
-<addon id="script.openinfo" name="OpenInfo" version="1.8" provider-name="vitorp07">
+<addon id="script.openinfo" name="OpenInfo" version="1.9" provider-name="vitorp07">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.pil" version="1.1.7"/>
 		<import addon="script.module.requests" version="2.9.1"/>
-		<import addon="script.module.youtube.dl" version="18.320.0"/>
 		<import addon="plugin.video.youtube" version="5.5.1"/>
 		<import addon="resource.images.studios.white"/>
 		<import addon="script.meta" version="2.0"/>
