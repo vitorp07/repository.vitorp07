@@ -70,7 +70,7 @@
 		<description>Browse The MovieDb, The TVDb, Trakt and pass info along to library or an addon. Needs player-files and the appropriate addon to play the files.</description>
 	</extension>
 </addon>
-<addon id="script.openinfo" name="OpenInfo" version="2.0" provider-name="vitorp07">
+<addon id="script.openinfo" name="OpenInfo" version="2.1" provider-name="vitorp07">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.pil" version="1.1.7"/>
@@ -82,7 +82,7 @@
 	<extension point="xbmc.python.pluginsource" library="plugin.py">
 		<provides>video</provides>
 	</extension>
-	<extension point="xbmc.python.script" library="default.py">
+	<extension point="xbmc.python.script" library="script.py">
 		<provides>executable</provides>
 	</extension>
 	<extension point="kodi.context.item">
@@ -98,6 +98,13 @@
 		<platform>all</platform>
 		<summary>Fork of the ExtendedInfo script from phil65</summary>
 		<description>This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Needs skin implementation for lot of functions and Meta for library functions.</description>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot000.jpg</screenshot>
+			<screenshot>resources/screenshot001.jpg</screenshot>
+			<screenshot>resources/screenshot002.jpg</screenshot>
+		</assets>
 	</extension>
 </addon>
 <addon id="service.3denabler.samsungtv" name="3D Enabler" version="1.2" provider-name="vitorp07, Pavel Kuzub">
