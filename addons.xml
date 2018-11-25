@@ -44,14 +44,14 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="script.meta" name="Meta" version="2.1" provider-name="vitorp07">
+<addon id="script.meta" name="Meta" version="2.2" provider-name="vitorp07">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.futures" version="2.2.0"/>
 		<import addon="script.module.requests" version="2.9.1"/>
 		<import addon="script.module.requests-cache" version="0.4.13"/>
 	</requires>
-	<extension point="xbmc.python.pluginsource" library="meta_addon.py">
+	<extension point="xbmc.python.pluginsource" library="addon.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="login"/>
@@ -68,6 +68,13 @@
 		<platform>all</platform>
 		<summary>TMDb, TVDb and Trakt browser</summary>
 		<description>Browse The MovieDb, The TVDb, Trakt and pass info along to library or an addon. Needs player-files and the appropriate addon to play the files.</description>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot000.jpg</screenshot>
+			<screenshot>resources/screenshot001.jpg</screenshot>
+			<screenshot>resources/screenshot002.jpg</screenshot>
+		</assets>
 	</extension>
 </addon>
 <addon id="script.openinfo" name="OpenInfo" version="2.1" provider-name="vitorp07">
