@@ -44,7 +44,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="script.meta" name="Meta" version="2.2" provider-name="vitorp07">
+<addon id="script.meta" name="Meta" version="2.3" provider-name="vitorp07">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.futures" version="2.2.0"/>
