@@ -12,38 +12,6 @@
 		<description>Unofficial add-ons repository</description>
 	</extension>
 </addon>
-<addon id="skin.estuary" version="3.8" name="Estuary" provider-name="vitorp07, phil65, Ichabod Fletchman">
-	<requires>
-		<import addon="xbmc.gui" version="5.12.0"/>
-		<import addon="resource.images.studios.white" version="0.0.10"/>
-		<import addon="resource.images.moviegenreicons.transparent" version="0.0.6"/>
-	</requires>
-	<extension point="xbmc.gui.skin" debugging="false">
-		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
-		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
-		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
-		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary>Estuary skin by vitorp07, phil65 and Piers. (Kodi's default skin)</summary>
-		<description>Estuary is the default skin for Kodi 17.0 and above. It attempts to be easy for first time Kodi users to understand and use.</description>
-		<disclaimer>Estuary is the default skin for Kodi, removing it may cause issues</disclaimer>
-		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<screenshot>resources/screenshot-01.jpg</screenshot>
-			<screenshot>resources/screenshot-02.jpg</screenshot>
-			<screenshot>resources/screenshot-03.jpg</screenshot>
-			<screenshot>resources/screenshot-04.jpg</screenshot>
-			<screenshot>resources/screenshot-05.jpg</screenshot>
-			<screenshot>resources/screenshot-06.jpg</screenshot>
-			<screenshot>resources/screenshot-07.jpg</screenshot>
-			<screenshot>resources/screenshot-08.jpg</screenshot>
-		</assets>
-	</extension>
-</addon>
 <addon id="script.meta" name="Meta" version="2.3" provider-name="vitorp07">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
